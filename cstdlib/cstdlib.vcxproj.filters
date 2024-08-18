@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{248e5c91-7880-46f1-9e2e-0c99f005996a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Win32">
+      <UniqueIdentifier>{1f6d710a-96c2-4d53-a26e-47dcfb4b6387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\formatter">
+      <UniqueIdentifier>{8c049ff0-42e6-4fb9-90f9-85f1f9521447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\formatter\scan">
+      <UniqueIdentifier>{c320486c-3225-42c6-880d-efc959f12d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\formatter\print">
+      <UniqueIdentifier>{0e7c2c47-99fc-4430-81f0-1f5cefe190b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Win32\System">
+      <UniqueIdentifier>{9f70b4aa-4502-4279-aad6-23dfbe29c757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Win32\System\Syscalls">
+      <UniqueIdentifier>{8a7bcc59-60ba-4bf9-b7f4-5e779596a4e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cstdlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctype.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\setjmp.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\string.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\errno.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atoi.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rand.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trigo_math.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\expo.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fma_math.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\minmax_math.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\manip_math.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memman.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\signal.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prog_control.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\classify_math.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sort.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdlib_arith.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filectrl.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LinkedList.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\get_n_put.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VariableSizeMath.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IEEE754Parsers.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\time_manip.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\round.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\threads.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mtx.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cond_var.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThreadSpecificStorage.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imax.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\assert.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hyper_math.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error_gamma.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math_rem.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utf8_conv.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TOSThreadEnvironmentBlock.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utf16_conv.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\uchar.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wctype.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\locale.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fenv.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\multibyte.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strtod_impl.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cplx.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex_trigo.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex_expo.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex_util.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wcs_string.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wchar_converters.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProcessInitializers.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wcstoi.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\print_formatters.cpp">
+      <Filter>Source Files\src\formatter\print</Filter>
+    </ClCompile>
+    <ClCompile Include="src\printf_utils.cpp">
+      <Filter>Source Files\src\formatter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scan_formatters.cpp">
+      <Filter>Source Files\src\formatter\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strftime.cpp">
+      <Filter>Source Files\src\formatter\print</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exceptions.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memman_v3.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wide_strtold_impl.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wprintf.cpp">
+      <Filter>Source Files\src\formatter\print</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wprintf_utils.cpp">
+      <Filter>Source Files\src\formatter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wcsftime.cpp">
+      <Filter>Source Files\src\formatter\print</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wscan_formatters.cpp">
+      <Filter>Source Files\src\formatter\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\system\win32_SyscallTable.cpp">
+      <Filter>Source Files\src\Win32\System\Syscalls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\win32_file.cpp">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\win32_GimpedPE32.cpp">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\win32_memory.cpp">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\win32_ntdll.cpp">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\win32_tls.cpp">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\win32_entry.cpp">
+      <Filter>Source Files\src\Win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\errno.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fenv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\float.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\inttypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\iso646.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\limits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\setjmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\signal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdalign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdarg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdatomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdbool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stddef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdnoreturn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tgmath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\threads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uchar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wchar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wctype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\locale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProcessInitializers.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LinkedList.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VariableSizeMath.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IEEE754Parsers.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TOSThreadEnvironmentBlock.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utf_conv.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cplx.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\printf_utils.h">
+      <Filter>Source Files\src\formatter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FiloQueue.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\except.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x87_float.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x86_msr.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\memman_v3.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\wprintf_utils.h">
+      <Filter>Source Files\src\formatter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\win32_base.h">
+      <Filter>Source Files\src\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\win32_except.h">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\win32_file.h">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\win32_GimpedPE32.h">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\win32_memory.h">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\win32_ntdll.h">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\win32_PE32Structures.h">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\win32_tls.h">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\win32_tzres_dll.h">
+      <Filter>Source Files\src\Win32\System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\win32\system\w32_syscall_masm.asm">
+      <Filter>Source Files\src\Win32\System\Syscalls</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

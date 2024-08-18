@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/cstdlib/.vs/
+/cstdlib/cstdlib/
+/ntdll/x64/
+/Tester/x64/

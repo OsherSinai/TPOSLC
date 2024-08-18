@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{91ddef0a-3a7b-406a-9f0c-51fc27867de3}</ProjectGuid>
+    <RootNamespace>cstdlib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath />
+    <IncludePath>$(SolutionDir)</IncludePath>
+    <ExternalIncludePath />
+    <TargetName>$(ProjectName)_$(LibrariesArchitecture)</TargetName>
+    <LibraryPath>$(ProjectDir)$(Platform)\$(Configuration)</LibraryPath>
+    <ReferencePath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ExecutablePath />
+    <IncludePath>$(SolutionDir)</IncludePath>
+    <ExternalIncludePath />
+    <TargetName>$(ProjectName)_$(LibrariesArchitecture)</TargetName>
+    <LibraryPath>$(ProjectDir)$(Platform)\$(Configuration)</LibraryPath>
+    <ReferencePath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ExecutablePath>$(LLVMInstallDir)\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(SolutionDir)</IncludePath>
+    <ExternalIncludePath />
+    <ReferencePath>
+    </ReferencePath>
+    <LibraryPath>$(ProjectDir)$(Platform)\$(Configuration)</LibraryPath>
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <TargetName>$(ProjectName)_$(LibrariesArchitecture)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ExecutablePath>$(LLVMInstallDir)\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(SolutionDir)</IncludePath>
+    <ExternalIncludePath />
+    <ReferencePath>
+    </ReferencePath>
+    <LibraryPath>$(ProjectDir)$(Platform)\$(Configuration)</LibraryPath>
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <TargetName>$(ProjectName)_$(LibrariesArchitecture)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>__CLANG_MAX_ALIGN_T_DEFINED;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>__CLANG_MAX_ALIGN_T_DEFINED;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>__CLANG_MAX_ALIGN_T_DEFINED;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ntdll.lib</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>__CLANG_MAX_ALIGN_T_DEFINED;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <StringPooling>true</StringPooling>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ntdll.lib</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cstdlib.cpp" />
+    <ClCompile Include="src\assert.cpp" />
+    <ClCompile Include="src\atoi.cpp" />
+    <ClCompile Include="src\classify_math.cpp" />
+    <ClCompile Include="src\complex_expo.cpp" />
+    <ClCompile Include="src\complex_util.cpp" />
+    <ClCompile Include="src\cond_var.cpp" />
+    <ClCompile Include="src\cplx.cpp" />
+    <ClCompile Include="src\complex_trigo.cpp" />
+    <ClCompile Include="src\ctype.cpp" />
+    <ClCompile Include="src\errno.cpp" />
+    <ClCompile Include="src\error_gamma.cpp" />
+    <ClCompile Include="src\exceptions.cpp" />
+    <ClCompile Include="src\expo.cpp" />
+    <ClCompile Include="src\fenv.cpp" />
+    <ClCompile Include="src\filectrl.cpp" />
+    <ClCompile Include="src\fma_math.cpp" />
+    <ClCompile Include="src\get_n_put.cpp" />
+    <ClCompile Include="src\hyper_math.cpp" />
+    <ClCompile Include="src\IEEE754Parsers.cpp" />
+    <ClCompile Include="src\imax.cpp" />
+    <ClCompile Include="src\LinkedList.cpp" />
+    <ClCompile Include="src\locale.cpp" />
+    <ClCompile Include="src\lock.cpp" />
+    <ClCompile Include="src\manip_math.cpp" />
+    <ClCompile Include="src\math_rem.cpp" />
+    <ClCompile Include="src\memman.cpp" />
+    <ClCompile Include="src\memman_v3.cpp" />
+    <ClCompile Include="src\minmax_math.cpp" />
+    <ClCompile Include="src\mtx.cpp" />
+    <ClCompile Include="src\multibyte.cpp" />
+    <ClCompile Include="src\printf_utils.cpp" />
+    <ClCompile Include="src\ProcessInitializers.cpp" />
+    <ClCompile Include="src\round.cpp" />
+    <ClCompile Include="src\print_formatters.cpp" />
+    <ClCompile Include="src\prog_control.cpp" />
+    <ClCompile Include="src\rand.cpp" />
+    <ClCompile Include="src\scan_formatters.cpp" />
+    <ClCompile Include="src\setjmp.cpp" />
+    <ClCompile Include="src\signal.cpp" />
+    <ClCompile Include="src\sort.cpp" />
+    <ClCompile Include="src\stdlib_arith.cpp" />
+    <ClCompile Include="src\strftime.cpp" />
+    <ClCompile Include="src\string.cpp" />
+    <ClCompile Include="src\strtod_impl.cpp" />
+    <ClCompile Include="src\threads.cpp" />
+    <ClCompile Include="src\ThreadSpecificStorage.cpp" />
+    <ClCompile Include="src\time_manip.cpp" />
+    <ClCompile Include="src\TOSThreadEnvironmentBlock.cpp" />
+    <ClCompile Include="src\trigo_math.cpp" />
+    <ClCompile Include="src\uchar.cpp" />
+    <ClCompile Include="src\utf16_conv.cpp" />
+    <ClCompile Include="src\utf8_conv.cpp" />
+    <ClCompile Include="src\VariableSizeMath.cpp" />
+    <ClCompile Include="src\wchar_converters.cpp" />
+    <ClCompile Include="src\wcsftime.cpp" />
+    <ClCompile Include="src\wcstoi.cpp" />
+    <ClCompile Include="src\wcs_string.cpp" />
+    <ClCompile Include="src\wctype.cpp" />
+    <ClCompile Include="src\wide_strtold_impl.cpp" />
+    <ClCompile Include="src\win32\system\win32_SyscallTable.cpp" />
+    <ClCompile Include="src\win32\win32_entry.cpp" />
+    <ClCompile Include="src\win32\win32_file.cpp" />
+    <ClCompile Include="src\win32\win32_GimpedPE32.cpp" />
+    <ClCompile Include="src\win32\win32_memory.cpp" />
+    <ClCompile Include="src\win32\win32_ntdll.cpp" />
+    <ClCompile Include="src\win32\win32_tls.cpp" />
+    <ClCompile Include="src\wprintf.cpp" />
+    <ClCompile Include="src\wprintf_utils.cpp" />
+    <ClCompile Include="src\wscan_formatters.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\assert.h" />
+    <ClInclude Include="include\complex.h" />
+    <ClInclude Include="include\ctype.h" />
+    <ClInclude Include="include\errno.h" />
+    <ClInclude Include="include\except.h" />
+    <ClInclude Include="include\fenv.h" />
+    <ClInclude Include="include\float.h" />
+    <ClInclude Include="include\inttypes.h" />
+    <ClInclude Include="include\iso646.h" />
+    <ClInclude Include="include\limits.h" />
+    <ClInclude Include="include\locale.h" />
+    <ClInclude Include="include\math.h" />
+    <ClInclude Include="include\setjmp.h" />
+    <ClInclude Include="include\signal.h" />
+    <ClInclude Include="include\stdalign.h" />
+    <ClInclude Include="include\stdarg.h" />
+    <ClInclude Include="include\stdatomic.h" />
+    <ClInclude Include="include\stdbool.h" />
+    <ClInclude Include="include\stddef.h" />
+    <ClInclude Include="include\stdint.h" />
+    <ClInclude Include="include\stdio.h" />
+    <ClInclude Include="include\stdlib.h" />
+    <ClInclude Include="include\stdnoreturn.h" />
+    <ClInclude Include="include\string.h" />
+    <ClInclude Include="include\tgmath.h" />
+    <ClInclude Include="include\threads.h" />
+    <ClInclude Include="include\time.h" />
+    <ClInclude Include="include\uchar.h" />
+    <ClInclude Include="include\wchar.h" />
+    <ClInclude Include="include\wctype.h" />
+    <ClInclude Include="src\cplx.h" />
+    <ClInclude Include="src\FiloQueue.h" />
+    <ClInclude Include="src\IEEE754Parsers.h" />
+    <ClInclude Include="src\LinkedList.h" />
+    <ClInclude Include="src\lock.h" />
+    <ClInclude Include="src\memman_v3.h" />
+    <ClInclude Include="src\printf_utils.h" />
+    <ClInclude Include="src\ProcessInitializers.h" />
+    <ClInclude Include="src\TOSThreadEnvironmentBlock.h" />
+    <ClInclude Include="src\utf_conv.h" />
+    <ClInclude Include="src\VariableSizeMath.h" />
+    <ClInclude Include="src\win32\win32_base.h" />
+    <ClInclude Include="src\win32\win32_except.h" />
+    <ClInclude Include="src\win32\win32_file.h" />
+    <ClInclude Include="src\win32\win32_GimpedPE32.h" />
+    <ClInclude Include="src\win32\win32_memory.h" />
+    <ClInclude Include="src\win32\win32_ntdll.h" />
+    <ClInclude Include="src\win32\win32_PE32Structures.h" />
+    <ClInclude Include="src\win32\win32_tls.h" />
+    <ClInclude Include="src\win32\win32_tzres_dll.h" />
+    <ClInclude Include="src\wprintf_utils.h" />
+    <ClInclude Include="src\x86_msr.h" />
+    <ClInclude Include="src\x87_float.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\win32\system\w32_syscall_masm.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
